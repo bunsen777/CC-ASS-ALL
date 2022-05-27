@@ -1,0 +1,35 @@
+1>create a new folder(hello) other than C drive and put app.yaml and hello.py cre
+2>create a new config
+3>log in a new account and then allow
+4>craete a new project===>create project name very unique
+5>py google-cloud-sdk\bin\dev_appserver.py "_dirr_name"
+6>put localhost link on browser http://localhost:8080/ 
+FOR ASS2
+same upto 6 th step
+7> ctrl+c
+8>gcloud app deploy "dirr_name"
+9>18
+10>y
+take screen shot
+---------------------------------------------------------------------------------------------
+CC-ASS-4
+1> check virtual machine file and ubuntu file 
+2>open virtual box and click on NEW
+3>name: VM1 , type: Linux, version: Ubuntu-64bit then click NEXT
+4>keep ram default and click NEXT
+5>SELECT use an existing virtual hard-disk file(https://drive.google.com/drive/u/0/folders/1me_nJJh0fvdDOXX3ew2jzGQpoP7f_iFt)
+6>CLICK on folder icon and SELECT ubuntu-18.04 then click CREATE
+7> same steps 3,4,5,6, for VM2
+8>file>prefrences>network if blank CLICK + and add NAT network
+9> VM1 > LEFT CLICK > settings > Network > SELECT nat network > ok same for VM2
+10> START VM1 and VM2 by double-clicking on each
+11> one VM at a time
+12>LOGIN AND PASSWORD : vagrant (do for both VM1 AND VM2)
+13>TYPE :ifconfig (on both VM)
+14>TYPE :touch abhi.txt
+15>TYPE :nano abhi.txt
+16> write content in text file then press CTRL+S > CTRL+X
+17>TYPE: cat abhi.txt
+18>TYPE: scp abhi.txt vagrant@10.0.2.6:/home/vagrant
+19>yes > password 
+20> VM2 : ls > cat abhi.txt
